@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    body {
+      background: rgba(0, 0, 0, 0.4);
+      font-family: sans-serif;
+    }
+
+    .modal {
+      box-sizing: border-box;
+      background: white;
+      position: fixed;
+      width: 600px;
+      left: calc(50vw - 300px);
+      min-height: 80vh;
+      border-radius: 40px;
+      padding: 80px;
+    }
+
+    .btn {
+      font-weight: bold;
+      display: block;
+    }
+
+    .btn-rounded {
+      border-radius: 500px;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid black;
+    }
+
+    .btn-filled {
+      background: black;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="modal">
+      <i class="close-btn">X</i>
+      <img src="./images/tw-logo.svg" alt="Twitter logo" />
+      <h1>Sign in to Twitter</h1>
+
+      <a href="#" class="btn btn-rounded">Sign in with Google</a>
+      <a href="#" class="btn btn-rounded">Sign in with Apple</a>
+
+      <div>or</div>
+      <input type="text" placeholder="Phone, email address, or username" />
+
+      <a href="#" class="btn btn-rounded btn-filled">Next</a>
+      <a href="#" class="btn btn-rounded">Forgot Password?</a>
+
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </body>
+</html>
